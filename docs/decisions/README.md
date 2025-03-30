@@ -17,6 +17,15 @@ Ce site web est automatiquement mis à jour après un changement sur la branche 
 
 Le statut d'une ADR peut avoir les états suivants :
 
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script>
+  // Replaces <pre class="mermaid"> blocks with <img> blocks, to make mermaid render properly.
+  // Preserves classes and styling so they can be used to fix sizing if necessary.
+
+  mermaid.initialize({ startOnLoad: false });
+
+</script
+
 <pre class="mermaid">
 
 flowchart LR;
