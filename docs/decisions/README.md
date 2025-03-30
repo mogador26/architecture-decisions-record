@@ -1,7 +1,7 @@
-# Decisions
+# Architecture
 
 ## Définitions 
-Une décision architecturale (DA) est un choix de conception d'un logiciel qui répond à une exigence fonctionnelle ou non fonctionnelle importante sur le plan architectural. 
+Une décision d'architecture (DA) est un choix de conception d'un logiciel qui répond à une exigence fonctionnelle ou non fonctionnelle importante sur le plan architectural. 
 
 Un enregistrement de décision architecturale [ADR](httsp://adr.github.io) capture une seule décision architecturale, comme c'est souvent le cas lors de la rédaction de notes personnelles ou de comptes rendus de réunions ; l'ensemble des ADR créés et conservés dans le cadre d'un projet constitue son journal des décisions. 
 
@@ -17,24 +17,23 @@ Ce site web est automatiquement mis à jour après un changement sur la branche 
 
 Le statut d'une ADR peut avoir les états suivants :
 
-```mermaid
+<pre class="mermaid">
 
-flowchart LR
+flowchart LR;
 
-    A[Brouillon] --> B[Proposée]
-    B[Proposée] --> C[Rejetée]
-    B[Proposée] --> D[Acceptée]
-    D[Acceptée] --> E[Obsolète]
-    D[Acceptée] --> F[Remplacée]
-
-```
+    A[Brouillon] --> B[Proposée];
+    B[Proposée] --> C[Rejetée];
+    B[Proposée] --> D[Acceptée];
+    D[Acceptée] --> E[Obsolète];
+    D[Acceptée] --> F[Remplacée];
+</pre>
 
 
 Quelques formats possibles :
 
-* [adr-template.md](adr-template.md) has all sections, with explanations about them.
-* [adr-template-minmal.md](adr-template-minimal.md) only contains mandatory sections, with explanations about them. <!-- ### Consequences also contained, though marked as "optional" -->
-* [adr-template-bare.md](adr-template-bare.md) has all sections, wich are empty (no explanations).
-* [adr-template-bare-minimal.md](adr-template-bare-minimal.md) has the mandatory sections, without explanations. <!-- ### Consequences also contained, though marked as "optional" -->
+* [adr-template.md](adr-template.md) contient toutes les sections, avec des explications à leur sujet.
+* [adr-template-minmal.md](adr-template-minimal.md) ne contient que des sections obligatoires, accompagnées d'explications.. <!-- ### Consequences also contained, though marked as "optional" -->
+* [adr-template-bare.md](adr-template-bare.md) toutes les sections sont vides.
+* [adr-template-bare-minimal.md](adr-template-bare-minimal.md) comporte les sections obligatoires, sans explications. <!-- ### Consequences also contained, though marked as "optional" -->
 
 La documentation MADR est disponible sur le [site](https://adr.github.io/madr/). .
