@@ -36,7 +36,7 @@ Le statut d'une ADR peut avoir les états suivants :
 </pre>
 
 
-Quelques formats possibles :
+Quelques formats possibles en anglais :
 
 * [adr-template.md](adr-template.md) contient toutes les sections, avec des explications à leur sujet.
 * [adr-template-minmal.md](adr-template-minimal.md) ne contient que des sections obligatoires, accompagnées d'explications.. <!-- ### Consequences also contained, though marked as "optional" -->
