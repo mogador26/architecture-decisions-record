@@ -27,14 +27,12 @@ Le statut d'une ADR peut avoir les états suivants :
 </script
 
 <pre class="mermaid">
-
-flowchart LR;
-
-    A[Brouillon] --> B[Proposée];
-    B[Proposée] --> C[Rejetée];
-    B[Proposée] --> D[Acceptée];
-    D[Acceptée] --> E[Obsolète];
-    D[Acceptée] --> F[Remplacée];
+    flowchart LR
+        A[Brouillon] --> B[Proposée]
+        B[Proposée] --> C[Rejetée]
+        B[Proposée] --> D[Acceptée]
+        D[Acceptée] --> E[Obsolète]
+        D[Acceptée] --> F[Remplacée]
 </pre>
 
 
