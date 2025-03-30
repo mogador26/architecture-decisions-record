@@ -1,9 +1,17 @@
 # Architecture
 
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script>
+  // Replaces <pre class="mermaid"> blocks with <img> blocks, to make mermaid render properly.
+  // Preserves classes and styling so they can be used to fix sizing if necessary.
+
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
 ## Définitions 
 Une décision d'architecture (DA) est un choix de conception d'un logiciel qui répond à une exigence fonctionnelle ou non fonctionnelle importante sur le plan architectural. 
 
-Un enregistrement de décision architecturale [ADR](httsp://adr.github.io) capture une seule décision architecturale, comme c'est souvent le cas lors de la rédaction de notes personnelles ou de comptes rendus de réunions ; l'ensemble des ADR créés et conservés dans le cadre d'un projet constitue son journal des décisions. 
+Un enregistrement de décision d'architecture [ADR](httsp://adr.github.io) capture une seule décision architecturale, comme c'est souvent le cas lors de la rédaction de notes personnelles ou de comptes rendus de réunions ; l'ensemble des ADR créés et conservés dans le cadre d'un projet constitue son journal des décisions. 
 
 **Un ADR est immuable** : seul son statut peut changer (c'est-à-dire qu'il peut devenir obsolète ou supplanté). Ainsi, vous pouvez vous familiariser avec l'historique complet du projet en lisant simplement son journal de décisions dans l'ordre chronologique. 
 
@@ -17,22 +25,13 @@ Ce site web est automatiquement mis à jour après un changement sur la branche 
 
 Le statut d'une ADR peut avoir les états suivants :
 
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-<script>
-  // Replaces <pre class="mermaid"> blocks with <img> blocks, to make mermaid render properly.
-  // Preserves classes and styling so they can be used to fix sizing if necessary.
-
-  mermaid.initialize({ startOnLoad: false });
-
-</script
-
 <pre class="mermaid">
-    flowchart LR
-        A[Brouillon] --> B[Proposée]
-        B[Proposée] --> C[Rejetée]
-        B[Proposée] --> D[Acceptée]
-        D[Acceptée] --> E[Obsolète]
-        D[Acceptée] --> F[Remplacée]
+    flowchart LR;
+        A[Brouillon] --> B[Proposée];
+        B[Proposée] --> C[Rejetée];
+        B[Proposée] --> D[Acceptée];
+        D[Acceptée] --> E[Obsolète];
+        D[Acceptée] --> F[Remplacée];
 </pre>
 
 
