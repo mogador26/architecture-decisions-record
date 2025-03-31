@@ -35,7 +35,7 @@ Le statut d'une ADR peut avoir les états suivants :
 </pre>
 
 Proposition de format :
-[adr-template-mi](adr-template-mi) contient toutes les sections avec titre en français et les explications associées.
+[adr-template-mi.md](adr-template-mi.md) contient toutes les sections avec titre en français et les explications associées.
 
 Quelques formats possibles en anglais :
 
