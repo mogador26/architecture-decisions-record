@@ -34,6 +34,8 @@ Le statut d'une ADR peut avoir les états suivants :
         D[Acceptée] --> F[Remplacée];
 </pre>
 
+Proposition de format :
+[adr-template-mi](adr-template-mi) contient toutes les sections avec titre en français et les explications associées.
 
 Quelques formats possibles en anglais :
 
