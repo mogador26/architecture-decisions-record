@@ -50,5 +50,5 @@ La documentation MADR est disponible sur le [site](https://adr.github.io/madr/).
 
 - [SIAF - mongodb vs postgresql](./database/0001-mongodb-vs-postgresql.md)
 
-## github
-- [Repo](https://mogador26.github.io/architecture-decisions-record)
+## GitHub
+- [Repo](https://github.com/mogador26/architecture-decisions-record)
