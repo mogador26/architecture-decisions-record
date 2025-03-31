@@ -21,7 +21,7 @@ En outre, le maintien de cette documentation vise à :
 - 🤝 Formaliser le processus de décision de l'équipe
 
 ## Utilisations
-Ce site web est automatiquement mis à jour après un changement sur la branche *main* du dépôt Git du projet. Chaque ADR est représenté par markdown.
+Ce site web est automatiquement mis à jour après un changement sur la branche *main* du dépôt Git du projet. Chaque ADR est représenté au format markdown.
 
 Le statut d'une ADR peut avoir les états suivants :
 
