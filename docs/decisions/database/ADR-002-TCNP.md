@@ -89,7 +89,6 @@ graph LR;
 graph LR;
   client([client])-. Ingress-managed <br> load balancer .->ingress_es[Ingress,https://api-es];
   ingress_es -->|/api/v1/identites|service4[Service api-ci-es];
-  service4-->service3[Service opensearch]
   subgraph cluster
   ingress_es;
   service3-->pod4[Pod];
@@ -98,6 +97,7 @@ graph LR;
   service4-->pod9[Pod];
   service4-->pod10[Pod];
   service4-->pod11[Pod];
+  pod9-->service3[Service opensearch]
   end
   
   classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000;
