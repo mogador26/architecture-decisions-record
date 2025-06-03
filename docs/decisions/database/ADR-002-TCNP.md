@@ -1,3 +1,7 @@
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+</script>
+
 # ADR-002: [TCNP] traitement et mode d'exposition
 
 - Status: accepted
@@ -44,8 +48,7 @@ L'application doit être maintenue par la service Team.
     - avantages : s3 est le seul point de stockage;
     - inconvénients : empreinte mémoire importante compte tenu de l'évolution de la volumétrie  
 
-```mermaid
-
+<pre class="mermaid">
 graph LR;
   client([client])-. Ingress-managed <br> load balancer .->ingress[Ingress,https://api];
   ingress-->|/api/v1/identites|service1[Service api-ci];
@@ -67,23 +70,22 @@ graph LR;
   class ingress,service1,service2,pod1,pod2,pod3,pod4,pod5,pod6 k8s;
   class client plain;
   class cluster cluster;
-
-```
+</pre>
 
 - option 2 : API et elasticsearch/opensearch
   
     - avantages : recherche approchante en utilisant la méthode de recherche par distance (*jaro-winkler* ou *levenshtein*);
     - inconvénients: définir un seuil et une méthode de scoring
    
- ```mermaid
+ <pre class="mermaid">
 graph LR;
     s3-->cronjob;
     cronjob-->opensearch;
  
-```
+ </pre>
 > note: chargement des données
 
-```mermaid
+<pre class="mermaid">
 graph LR;
   client([client])-. Ingress-managed <br> load balancer .->ingress_es[Ingress,https://api-es];
   ingress_es -->|/api/v1/identites|service4[Service api-ci-es];
@@ -105,7 +107,7 @@ graph LR;
   class client plain;
   class cluster cluster;
 
-```
+</pre>
 
   - option 3 : La base de base de données directement exposée via postgrest https://postgrest.org/en/v11/.
     - avantages :
